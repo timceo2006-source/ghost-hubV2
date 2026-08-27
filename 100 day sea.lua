@@ -22,3 +22,9 @@ local Window = WindUI:CreateWindow({
         end,
     },
 })
+
+local Tab = Window:Tab({
+    Title = "Lobby",
+    Icon = "", -- optional
+    Locked = false,
+})
