@@ -28,3 +28,12 @@ local Tab = Window:Tab({
     Icon = "", -- optional
     Locked = false,
 })
+
+local Button = Tab:Button({
+    Title = "Button",
+    Desc = "Test Button",
+    Locked = false,
+    Callback = function()
+        -- ...
+    end
+})
