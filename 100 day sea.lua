@@ -30,8 +30,8 @@ local Tab = Window:Tab({
 })
 
 local Button = Tab:Button({
-    Title = "Button",
-    Desc = "Test Button",
+    Title = "Auto Join",
+    Desc = "Auto Join Room",
     Locked = false,
     Callback = function()
         -- ...
