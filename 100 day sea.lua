@@ -57,7 +57,6 @@ Tab:Toggle({
     Title = "Auto Join Room / Farm",
     Description = "กดปุ่ม Lobby และ CREATE อัตโนมัติ",
     Default = false,
-    Enabled = false, -- ปิดป๊อปอัพแจ้งเตือนของ WindUI ตรงนี้
     Callback = function(Value)
         getgenv().AutoJoinGame = Value
         if not Value then
@@ -90,13 +89,6 @@ task.spawn(function()
                     
                 elseif lobbyPlayBtn and lobbyPlayBtn.Visible and lobbyPlayBtn.AbsoluteSize.X > 0 then
                     selectAndPressEnter(lobbyPlayBtn)
-                    task.wait(2)
-                end
-            end)
-        end
-        task.wait(1)
-    end
-end)
                     task.wait(2)
                 end
             end)
