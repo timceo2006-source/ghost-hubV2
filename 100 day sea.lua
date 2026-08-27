@@ -55,22 +55,11 @@ end
 
 Tab:Toggle({
     Title = "Auto Join Room / Farm",
-    Description = "",
+    Description = "กดปุ่ม Lobby และ CREATE อัตโนมัติ",
     Default = false,
     Callback = function(Value)
         getgenv().AutoJoinGame = Value
-        if Value then
-            WindUI:Notify({
-                Title = "Ghost Hub",
-                Content = "",
-                Duration = 2
-            })
-        else
-            WindUI:Notify({
-                Title = "Ghost Hub",
-                Content = "",
-                Duration = 2
-            })
+        if not Value then
             GuiService.SelectedObject = nil
         end
     end
